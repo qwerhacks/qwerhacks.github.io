@@ -1,0 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.full-height {
+    height: 75%;
+    width: 100%;
+    position: relative;
+}
+
