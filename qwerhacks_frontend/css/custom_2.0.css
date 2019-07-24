@@ -1,0 +1,39 @@
+/* homepage */
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.logo-icon {
+    position: relative;
+    top: 30px;
+    background-image: url("../img/stars-edge-blurred.png");
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* navbar */
+.custom-navbar {
+    overflow: hidden;
+    opacity: 1.0;
+    color: #fff;
+}
+
+.custom-navbar-brand {
+    font-weight: bold
+}
+
+a {
+    color: #fff;
+    /* border-bottom: 1px solid #fff; */
+}
+
+/* sticky.jss */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+

@@ -1,0 +1,32 @@
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* navbar */
+.custom-navbar {
+    overflow: hidden;
+    opacity: 1.0;
+    color: #fff;
+}
+
+.custom-navbar-brand {
+    font-weight: bold
+}
+
+a:link {
+    color: #fff;
+    /* border-bottom: 1px solid #fff; */
+}
+
+/* sticky.jss */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+
+
