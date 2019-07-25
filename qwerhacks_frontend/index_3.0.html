@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="css/custom_3.0.css">
     <!-- scripts -->
     <script src="./js/forms.js"></script>
+
+    <script>
+        function addEmail() {
+            console.log('entered function "addEmail"')
+            var oReq = new XMLHttpRequest();
+            email = document.getElementById('email-form-input').value;
+            console.log(email.toString());
+            // TODO need input verification
+            url = "http://httpbin.org/#/HTTP_Methods/get_get";
+            //url = "127.0.0.1:3000/email-list/" + email.toString(); 
+            // TODO change this to post in frontend and backend
+            oReq.open("GET", url);
+            oReq.send();
+        }
+    </script>
 </head>
 
 <body>
@@ -26,7 +41,6 @@
         </div>
     </div>
 
-
     <!-- Our Mission -->
     <!-- row, same width as home-content -->
     <div class="padding">
@@ -36,7 +50,7 @@
             <input class="email-form-input" id="email-form-input" type="text" placeholder="example: qwerhacks@gmail.com">
             <br>
             <br>
-            <button class="email-submit-button" id="email-submit-button"> submit </button>
+            <button class="email-submit-button" id="email-submit-button" onclick="addEmail()"> submit </button>
         </div>
     </div>
 
