@@ -5,13 +5,7 @@ const firebase = require("firebase");
 require("firebase/firestore");
 
 var firebaseConfig = {
-    apiKey: "AIzaSyDK-MnoR8ez-lUndQT7n47o1MP1pUj7_DQ",
-    authDomain: "qwerhacks-email-list.firebaseapp.com",
-    databaseURL: "https://qwerhacks-email-list.firebaseio.com",
-    projectId: "qwerhacks-email-list",
-    storageBucket: "qwerhacks-email-list.appspot.com",
-    messagingSenderId: "775611971858",
-    appId: "1:775611971858:web:c1f0b4ba46a5a4fc"
+    // insert api key here
 };
 
 // Initialize Firebase
