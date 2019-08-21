@@ -1,40 +1,32 @@
 const express = require('express');
 const app = express();
 const firebase = require("firebase");
+// environment variables
+require('dotenv').config();
+
+console.log(process.env);
+
 // Required for side-effects
 require("firebase/firestore");
-
 var firebaseConfig = {
-    apiKey: "AIzaSyDK-MnoR8ez-lUndQT7n47o1MP1pUj7_DQ",
-    authDomain: "qwerhacks-email-list.firebaseapp.com",
-    databaseURL: "https://qwerhacks-email-list.firebaseio.com",
-    projectId: "qwerhacks-email-list",
-    storageBucket: "qwerhacks-email-list.appspot.com",
-    messagingSenderId: "775611971858",
-    appId: "1:775611971858:web:c1f0b4ba46a5a4fc"
+    apiKey: process.env.API_KEY,
+    authDomain: process.env.AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    projectId: process.env.PROJECT_ID,
+    storageBucket: process.env.STORAGE_BUCKET,
+    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    appId: process.env.APP_ID
 };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 
-app.get('/', (req, res, next) => {
-    console.log("req.params: " + JSON.stringify(req.params));
-    res.status(200).json({
-        message: "This API works 3.0"
-    })
-});
-
-app.get('/email-list/:email', (req, res, next) => {
-    email = req.params.email;
-    db.collection('emails').add({
-        name: "placeholder name",
-        email: req.params.email,
-    })
-    
-    res.status(200).json({
-        message: ("email sent: " + req.params.email)
-    })
-});
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+routes(app);
+app.listen(port);
 
 module.exports = app;
+
+console.log('Server Listening at port'+port);
