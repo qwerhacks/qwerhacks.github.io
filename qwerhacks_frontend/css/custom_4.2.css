@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+:root {
+    --red: #f95151;
+    --orange: #f7a441; 
+    --yellow: #f9e35f;
+    --green: #83d45a;
+    --blue: #62afdf;
+    --purple: #8678dd;
+    
+    /* spacing variables */
+    --spacing-qwer-bar-height: 40px;
+    --spacing-side-padding: 25px;
+    --circle-size: 12px; 
+    --border-radius: 12px;
+}
+
+/* styling by tag */
+body { 
+    margin: 0;
+    background-color: #eee;
+}
+
+h1 {  
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+} 
+
+h3 { 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
+} 
+
+p { 
+    min-width: 100%;
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 200; 
+    line-height: 15.4px; /*20px*/; 
+    margin: 0;
+} 
+
+br {
+    line-height: 50%
+}
+
+blockquote { 
+    font-size: 21px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 30px; 
+} 
+
+pre { 
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.5714px; 
+}
+
+table { 
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* styling for font */
+.ubuntu {
+    font-family: Ubuntu;
+}
+.ubuntu-mono {
+    font-family: Ubuntu Mono;
+}
+
+/* styling for qwerhacks containers */
+.qwer-container {
+    position: relative;
+    margin: 20px;
+    border: 2px solid #000;
+    border-radius: var(--border-radius);
+}
+.bar {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    min-width: 100%;
+    height: var(--spacing-qwer-bar-height);
+    background-color: #000;
+    color: #fff;  /* text color: white */
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    
+}
+.dot {
+    height: var(--circle-size);
+    width: var(--circle-size);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 14px;
+    margin-right: 4px
+}
+.bar-title {
+    color: #fff;
+    display: inline-block;
+    margin-left: 25px;
+}
+.content {
+    display: table;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 65px;
+    padding-bottom: 25px;
+}
+.centerblock { /*just for vertical centering*/
+    display:table-cell;
+    vertical-align: middle;
+    margin: auto;
+}
+.row {
+    display: table-row;
+    overflow: hidden;
+}
+.col {
+    table-layout: auto;
+    display: table-cell;
+    overflow: hidden;
+    max-width: 50%
+}
+
+
+/* trivial class names */
+.bold {
+    font-weight: 700;
+}
+
+.border {
+    border: 1px solid #888;
+}
+.border-dotted {
+    border: 2px dotted #888;
+}
+
+.padding-12 {
+    padding: 12px;
+}
+.padding-sides-25 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.padding-right-12 {
+    padding-right: 12px;
+}
+.padding-left-12 {
+    padding-left: 12px;
+}
+.text-center {
+    text-align: center;
+}
+.inline-block {
+    display: inline-block;
+}
+
+/* colors! */
+.red {
+    background-color: var(--red);
+}
+.orange {
+    background-color: var(--orange);
+}
+.yellow {
+    background-color: var(--yellow);
+}
+.green {
+    background-color: var(--green);
+}
+.blue {
+    background-color: var(--blue);
+}
+.purple {
+    background-color: var(--purple);
+}
+.black {
+    background-color: #000;
+}
+.white {
+    background-color: #fff;
+}

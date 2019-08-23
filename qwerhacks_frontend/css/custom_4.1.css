@@ -13,10 +13,8 @@
 
 * {
     position: relative;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    hyphens: auto;
 }
+
 /* styling by tag */
 body { 
     margin: 0;
@@ -40,7 +38,7 @@ h3 {
 } 
 
 p { 
-    width: 100%;
+    min-width: 100%;
     font-size: 14px; 
     font-style: normal; 
     font-variant: normal; 
@@ -96,8 +94,9 @@ pre {
     
 }
 
-.col {
+.col { /* default full-width col */
     max-height: 100%;
+    width: 100%;
     display: block;
     margin-bottom: 0px;
 }
@@ -119,7 +118,7 @@ pre {
     width: 50%;
     float: left;
 }
-.navbar-components {
+.navbar-components {  /*TODO: make vertically center */
     width: 50%;
     display: flex;
     margin: auto;
@@ -164,12 +163,16 @@ pre {
     margin-left: 6px;
     margin-top: 6px;
 }
-
 .qwerhacks-content {
+    position: relative;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 40px;
     padding-bottom: 20px;
+    
+    overflow: hidden;
+    overflow-wrap: break-word;
+    align-items: flex-start;
 }
 
 .footer {
@@ -189,12 +192,6 @@ pre {
     padding-left: 24px;
     padding-right: 24px;
 }
-        /* TODO: make the fucking centerblock work */
-.centerblock {
-    display: inline-block;
-    background-color: var(--yellow);
-    margin: auto;
-}
 
 /* oAo */
 .background-black {
@@ -207,8 +204,21 @@ pre {
 .inline {
     display: inline;
 }
-.flex {
+.inline-block {
+    display: inline-block;
+}
+.col-flex {
     display: flex;
+    /* flex-direction: column; */
+}
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap {
+    flex-wrap: wrap;
+    background-color: var(--yellow);
 }
 
 .red {
