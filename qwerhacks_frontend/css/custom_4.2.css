@@ -10,16 +10,31 @@
     --purple: #8678dd;
     
     /* spacing variables */
+    --full-page-side-margins: 108px;
     --spacing-qwer-bar-height: 40px;
     --spacing-side-padding: 25px;
+
     --circle-size: 12px; 
     --border-radius: 12px;
 }
 
+
+/* styling for main content */
+.main {
+    width: 100%;
+}
+
+.logo {
+    max-width:100%;
+    height: auto;
+}
+
+
 /* styling by tag */
 body { 
+    /* box-sizing: border-box; */
     margin: 0;
-    background-color: #eee;
+    background-color: #000;
 }
 
 h1 {  
@@ -40,11 +55,11 @@ h3 {
 
 p { 
     min-width: 100%;
-    font-size: 14px; 
+    font-size: 16px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 200; 
-    line-height: 15.4px; /*20px*/; 
+    line-height: 18px;  
     margin: 0;
 } 
 
@@ -81,12 +96,93 @@ table {
     font-family: Ubuntu Mono;
 }
 
-/* styling for qwerhacks containers */
+/* navbar */
+.navbar {
+    font-size: 14px;
+    font-weight: 100;
+    background-color: #000;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+    margin: 0 !important;
+}
+
+.nav-links,
+.icon {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-nav li {
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 700px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .icon {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .icon:hover,
+    .nav-links:hover {
+        color: #fff;
+    }
+}
+
+/* qwerhacks containers */
 .qwer-container {
     position: relative;
     margin: 20px;
     border: 2px solid #000;
     border-radius: var(--border-radius);
+    min-width: 200px;
 }
 .bar {
     position: absolute;
@@ -120,22 +216,31 @@ table {
     padding-top: 65px;
     padding-bottom: 25px;
 }
-.centerblock { /*just for vertical centering*/
-    display:table-cell;
-    vertical-align: middle;
-    margin: auto;
+.partner-item {
+    display: inline-block;
+    height: 100px;
+    margin: 12px;
+    width: auto;
 }
-.row {
+.partner-item img {
+    height: 100%;
+    width: auto;
+}
+
+.qwer-row {
+    position: relative;
     display: table-row;
     overflow: hidden;
 }
-.col {
+.qwer-col {
     table-layout: auto;
     display: table-cell;
     overflow: hidden;
-    max-width: 50%
 }
 
+.footer {
+    color: #fff;
+}
 
 /* trivial class names */
 .bold {
@@ -149,12 +254,27 @@ table {
     border: 2px dotted #888;
 }
 
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
 .padding-12 {
     padding: 12px;
+}
+.padding-25 {
+    padding: 25px;
 }
 .padding-sides-25 {
     padding-left: 25px;
     padding-right: 25px;
+}
+.padding-top-bottom-25 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.padding-sides-100 {
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .padding-right-12 {
     padding-right: 12px;
@@ -162,6 +282,16 @@ table {
 .padding-left-12 {
     padding-left: 12px;
 }
+.margin-25 {
+    margin: 25px;
+}
+.margin-bottom-0 {
+    margin-bottom: 0;
+}
+.align-bottom {
+    /* justify-self: end; */
+}
+
 .text-center {
     text-align: center;
 }
