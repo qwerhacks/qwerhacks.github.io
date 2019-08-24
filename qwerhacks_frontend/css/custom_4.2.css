@@ -129,7 +129,7 @@ table {
 .navbar-toggle {
     position: absolute;
     top: 10px;
-    right: 100px;
+    right: 25px;
     cursor: pointer;
     color: #fff;
     font-size: 14px;
@@ -225,6 +225,11 @@ table {
 .partner-item img {
     height: 100%;
     width: auto;
+}
+.text-input {
+    font-size: 14px; 
+    width: 100%; 
+    border-radius: 2px;
 }
 
 .qwer-row {
