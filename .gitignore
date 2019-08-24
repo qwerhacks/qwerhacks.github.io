@@ -1,0 +1,5 @@
+.DS_Store
+
+#important!
+.env
+qwerhacks_backend/.env
