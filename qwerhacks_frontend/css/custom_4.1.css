@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+:root {
+    --red: #f95151;
+    --orange: #f7a441; 
+    --yellow: #f9e35f;
+    --green: #83d45a;
+    --blue: #62afdf;
+    --purple: #8678dd;
+    
+}
+
+* {
+    position: relative;
+}
+
+/* styling by tag */
+body { 
+    margin: 0;
+    background-color: #eee;
+}
+
+h1 {  
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+} 
+
+h3 { 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
+} 
+
+p { 
+    min-width: 100%;
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 200; 
+    line-height: 15.4px; /*20px*/; 
+    margin: 0;
+} 
+
+br {
+    line-height: 50%
+}
+
+.bold {
+    font-weight: 700;
+    line-height: 200%;
+}
+
+blockquote { 
+    font-size: 21px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 30px; 
+} 
+
+pre { 
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.5714px; 
+}
+
+/* styling by class */
+.ubuntu {
+    font-family: Ubuntu;
+}
+.ubuntu-mono {
+    font-family: Ubuntu Mono;
+}
+
+/* uWu */
+.row-parent {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    white-space:nowrap;
+}
+.row {
+    position: relative;
+    max-width: 100%;
+    white-space:nowrap;
+    
+}
+
+.col { /* default full-width col */
+    max-height: 100%;
+    width: 100%;
+    display: block;
+    margin-bottom: 0px;
+}
+.half-col {
+    max-width: 50%;
+}
+.third-col {
+    max-width: 25%
+}
+
+.navbar {
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+}
+.navbar-icon {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+.navbar-components {  /*TODO: make vertically center */
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+.navbar-item {
+    position: relative;
+    text-align: center;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.qwerhacks-container {
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px; */
+    border:1px solid black;
+    border-radius: 12px;
+    min-width: 100px;
+}
+.bar {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    background-color: #000;
+}
+.dot {
+    height: 12px;
+    width: 12px;
+    /* border-radius: 50%; */
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+.qwerhacks-content {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+    overflow: hidden;
+    overflow-wrap: break-word;
+    align-items: flex-start;
+}
+
+.footer {
+    color: #fff;
+}
+
+/* o.O */
+.full-page-padding {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+.row-padding {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.col-padding {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+/* oAo */
+.background-black {
+    background-color: #000;
+}
+.background-white {
+    background-color: #fff;
+}
+
+.inline {
+    display: inline;
+}
+.inline-block {
+    display: inline-block;
+}
+.col-flex {
+    display: flex;
+    /* flex-direction: column; */
+}
+.row-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrap {
+    flex-wrap: wrap;
+    background-color: var(--yellow);
+}
+
+.red {
+    background-color: var(--red);
+}
+.orange {
+    background-color: var(--orange);
+}
+.yellow {
+    background-color: var(--yellow);
+}
+.green {
+    background-color: var(--green);
+}
+.blue {
+    background-color: var(--blue);
+}
+.purple {
+    background-color: var(--purple);
+}
