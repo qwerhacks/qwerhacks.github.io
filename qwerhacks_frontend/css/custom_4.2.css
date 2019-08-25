@@ -31,10 +31,19 @@
 
 
 /* styling by tag */
+html {
+    scroll-behavior: smooth;
+    min-width: 430px;
+}
+
 body { 
     /* box-sizing: border-box; */
     margin: 0;
     background-color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 h1 {  
@@ -106,6 +115,13 @@ table {
     padding-top: 10px;
 }
 
+.navbar a:link {
+    color: #fff;
+}
+.navbar a:visited {
+    color: #fff
+}
+
 .main-nav {
     list-style-type: none;
     display: none;
@@ -129,7 +145,7 @@ table {
 .navbar-toggle {
     position: absolute;
     top: 10px;
-    right: 100px;
+    right: 0px;
     cursor: pointer;
     color: #fff;
     font-size: 14px;
@@ -174,6 +190,11 @@ table {
     .nav-links:hover {
         color: #fff;
     }
+}
+
+.button {
+    color: #666;
+    border: 0.5px solid #666;
 }
 
 /* qwerhacks containers */
@@ -241,8 +262,14 @@ table {
 .footer {
     color: #fff;
 }
-
-/* trivial class names */
+.footer a {
+    color: #fff;
+}
+.footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+  
 .bold {
     font-weight: 700;
 }
@@ -287,9 +314,6 @@ table {
 }
 .margin-bottom-0 {
     margin-bottom: 0;
-}
-.align-bottom {
-    /* justify-self: end; */
 }
 
 .text-center {
