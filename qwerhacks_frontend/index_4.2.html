@@ -20,29 +20,60 @@
     </head>
 
     <body>
+        <div class="black sticky-top padding-sides-100 nav-container">
+            <nav class="navbar navbar-expand-md ubuntu" >
+                <a class="navbar-brand" href="#"> 
+                    <img src="css/logo-icon.png">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="css/fa-bars.png" height="30px" width="auto">
+                    </span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-0 ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Partners</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sponsors</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
         <!-- navbar -->
-        <div class="padding-sides-100 black" style="position: fixed; top:0px; width: 100%; z-index: 1;">
+        <!-- <div class="padding-sides-100 black" style="position: fixed; top:0px; width: 100%; z-index: 1;">
             <nav class="navbar" style="margin-right: var(--spacing-side-padding)">
+                <img href="#" class="icon" src="css/logo-icon.png"></a>
                 <span class="navbar-toggle" id="js-navbar-toggle">
                     <img src="css/fa-bars.png" width="30px"height="30px"></i>
                 </span>
-                <img href="#" class="icon" src="css/logo-icon.png"></a>
-                    <ul class="main-nav" id="js-menu">
-                        <li>
-                            <a href="#About" class="nav-links ubuntu">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="#FAQ" class="nav-links ubuntu">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#Partners" class="nav-links ubuntu">PARTNERS</a>
-                        </li>
-                        <li>
-                            <a href="#Sponsors" class="nav-links ubuntu">SPONSORS</a>
-                        </li>
-                    </ul>
+
+                <ul class="main-nav" id="js-menu">
+                    <li>
+                        <a href="#About" class="nav-links ubuntu">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="#FAQ" class="nav-links ubuntu">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#Partners" class="nav-links ubuntu">PARTNERS</a>
+                    </li>
+                    <li>
+                        <a href="#Sponsors" class="nav-links ubuntu">SPONSORS</a>
+                    </li>
+                </ul>
             </nav>
-        </div>
+        </div> -->
 
         <!-- row 1: logo, when/where, about -->
         <div class="padding-top-bottom-25 white">
@@ -78,7 +109,7 @@
                                                     <br>
                                                 </div>
                                                 <form class="ubuntu-mono" action="#when-where"> 
-                                                    <input class="text-input" id="enter-email" type="text" placeholder="example@mail.com">	
+                                                    <input class="text-input border" id="enter-email" type="text" placeholder="example@mail.com" style="margin: 0px;">	
                                                     <input class="button" type="submit" value="submit" onclick="onsubmit_func()">
                                                 </form>  
                                                 <div class="ubuntu-mono" id="submitted" style="visibility:hidden;">
@@ -267,16 +298,16 @@
                             <div class="padding-sides-25">
                                 <div class="qwer-row ">
                                     <div class="row text-center">
-                                        <div class="partner-item">
+                                        <div class="partner-item mx-auto">
                                             <img src="css/swe-logo.png">
                                         </div>
-                                        <div class="partner-item">
+                                        <div class="partner-item mx-auto">
                                             <img src="css/acmailogo.png">
                                         </div>
-                                        <div class="partner-item">
+                                        <div class="partner-item mx-auto">
                                             <img src="css/acmwlogo.svg">
                                         </div>
-                                        <div class="partner-item">
+                                        <div class="partner-item mx-auto">
                                             <img src="css/logo-hack.svg">
                                         </div>
                                     </div>
@@ -288,7 +319,7 @@
             </div>
         </div>
 
-        <!-- PARTNERS -->
+        <!-- SPONSORS -->
         <div class="padding-top-bottom-25 white">
             <div class="padding-sides-100">
                 <div class="row">
