@@ -8,6 +8,13 @@
     --green: #83d45a;
     --blue: #62afdf;
     --purple: #8678dd;
+
+    --light-red: #fc9292;
+    --light-orange: #ffc57d; 
+    --light-yellow: #fae98c;
+    --light-green: #a6e686;
+    --light-blue: #8fc1e0;
+    --light-purple: #ada6db;
     
     /* spacing variables */
     --full-page-side-margins: 108px;
@@ -167,8 +174,8 @@ nav a {
 .partner-item {
     display: inline-block;
     height: 100px;
-    margin: 12px;
     width: auto;
+    margin: 25px;
 }
 .partner-item img {
     height: 100%;
@@ -275,6 +282,26 @@ nav a {
 .purple {
     background-color: var(--purple);
 }
+
+.light-red {
+    background-color: var(--light-red);
+}
+.light-orange {
+    background-color: var(--light-orange);
+}
+.light-yellow {
+    background-color: var(--light-yellow);
+}
+.light-green {
+    background-color: var(--light-green);
+}
+.light-blue {
+    background-color: var(--light-blue);
+}
+.light-purple {
+    background-color: var(--light-purple);
+}
+
 .black {
     background-color: #000;
 }
@@ -287,7 +314,6 @@ nav a {
 /* change padding for mobile */
 @media screen and (max-width: 768px) {
     .nav-container {
-        padding-top: 25px;
         margin-left: 0;
         margin-right: 0;
     }
@@ -302,7 +328,11 @@ nav a {
     }
 
     .padding-sides-100 {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .sticky-top {
+        padding-top: 15px;
     }
 }
