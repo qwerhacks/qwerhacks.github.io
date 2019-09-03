@@ -9,24 +9,6 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- script src="js/google_script_form_ajax.js"></script -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script>
-            var $form = $('form#email-form'),
-            url = 'https://script.google.com/macros/s/AKfycbxxWviwVA6-EaOs-Mg9C41vYSToQcSseTuO6e0D3rKQ3NPdJWQ/exec'
-
-            $('#submit-form').on('click', function(e) {
-              e.preventDefault();
-              var jqxhr = $.ajax({
-                url: url,
-                method: "GET",
-                dataType: "json",
-                data: $form.serializeObject()
-              }).success(
-                console.log('success');
-              );
-            })
-        </script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -92,10 +74,7 @@
                                                     I'm interested! Pls update me!
                                                     <br>
                                                 </div>
-                                                <form id="email-form">
-                                                    <input name="email-interested" class="ubuntu-mono text-input" id="enter-email" type="text" placeholder="example@mail.com" >
-                                                    <button type="submit" id="submit-form">Submit</button>
-                                                </form>
+                                                <div class="typeform-widget" data-url="https://arjunsubramonian.typeform.com/to/ZEGery" style="width: 100%; height: 300px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
                                             </div>
                                         </div>
                                     </div>    
