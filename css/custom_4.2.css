@@ -178,6 +178,7 @@ nav a:hover {
     padding-top: 65px;
     padding-bottom: 25px;
 }
+
 .partner-item {
     display: inline-block;
     height: 100px;
@@ -187,6 +188,26 @@ nav a:hover {
 .partner-item img {
     height: 100%;
     width: auto;
+}
+
+.sponsor-item {
+    display: inline-block; 
+    width: auto;
+    height: 100%;
+    margin: 25px;
+}
+.sponsor-item img {
+    height: 100%;
+    width: auto;
+}
+.life {
+    height: 75px; 
+}
+.harmony {
+    height: 120px; 
+}
+.spirit {
+    height: 175px; 
 }
 
 .qwer-row {
