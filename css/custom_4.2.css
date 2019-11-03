@@ -27,15 +27,10 @@
 
 
 /* styling for main content */
-.main {
-    width: 100%;
-}
-
 .logo {
     max-width:100%;
     height: auto;
 }
-
 
 /* styling by tag */
 html {
@@ -49,10 +44,19 @@ body {
     background-color: #000;
 }
 
+a:visited {
+    text-decoration: none;
+}
 a:hover {
     text-decoration: underline;
 }
 .social-icon a:hover {
+    text-decoration: none;
+}
+a.no-link-decoration:hover {
+    text-decoration: none;
+}
+a.no-link-decoration:visited {
     text-decoration: none;
 }
 
@@ -154,10 +158,23 @@ nav a:hover {
     border-top-right-radius: var(--border-radius);
     
 }
-.button {
-    color: #666;
-    border: 0.5px solid #666;
+.button { 
+    font-size: 16px;
+    border-radius: 12px;
+    background-color: #000;
+    color: #fff;
 }
+.button a {
+    color: #fff;
+}
+.button a:hover {
+   text-decoration: none;
+}
+.button a:visited {
+    color: #fff;
+}
+
+
 .dot {
     height: var(--circle-size);
     width: var(--circle-size);
@@ -248,6 +265,9 @@ nav a:hover {
     padding: 0 !important;
     margin: 0 !important;
  }
+.padding-3 {
+    padding: 3px;
+}
 .padding-12 {
     padding: 12px;
 }
@@ -261,6 +281,10 @@ nav a:hover {
 .padding-top-bottom-25 {
     padding-top: 25px;
     padding-bottom: 25px;
+}
+.padding-top-bottom-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .padding-sides-100 {
     padding-left: 100px;
@@ -337,6 +361,43 @@ nav a:hover {
     background-color: #fff;
 }
 
+/* gradient buttons */
+.gradient-red-orange {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--red) 0%, var(--orange) 100%);
+    /* margin: 0 auto;
+    padding: 4px; */
+    border-radius: 15px;
+}
+.gradient-yellow-green {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--yellow) 0%, var(--green) 100%);
+    /* margin: 0 auto;
+    padding: 4px; */
+    border-radius: 15px;
+}
+.gradient-blue-purple {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--blue) 0%, var(--purple) 100%);
+    /* margin: 0 auto;
+    padding: 4px; */
+    border-radius: 15px;
+}
+.inside-gradient {
+    box-sizing: border-box;
+    color: #fff;
+	background: #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: background .5s ease;
+}
+.inside-gradient:hover {
+    background: transparent;   
+}
 
 
 /* change padding for mobile */

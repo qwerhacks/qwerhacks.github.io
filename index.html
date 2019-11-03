@@ -17,10 +17,11 @@
         <script src="js/fade.js"></script>
         <script src="js/navbar.js"></script>
         <script src="js/custom-scripts.js"></script>
-        <script src="js/add_links.js"></script>
     </head>
 
     <body>
+
+        <!-- NAVBAR -->
         <div class="black sticky-top padding-sides-100 nav-container">
             <nav class="navbar navbar-expand-md ubuntu" >
                 <a class="navbar-brand" href="#"> 
@@ -53,19 +54,52 @@
         </div>
 
         <!-- row 1: logo, when/where, about -->
-        <div class="padding-top-bottom-25 white">
+        <div class="white">
             <div class="padding-sides-100 padding-top-bottom-25">
-                <div class="main white">
+                <div class="white" width=100%>
                     <!-- LOGO -->
                     <div class="row padding-top-bottom-25">
-                        <div class="col-md-12 col-lg-9 mx-auto">
+                        <div class="col-md-12 col-lg-9 mx-auto nopadding">
                             <div class="container padding-25 text-center">
                                 <img class="logo" src="resources/qwerhacks_logo.png">
                             </div>
                         </div>
                     </div>
+
+                    <!-- quick links (buttons) -->
+                    <div class="white ">
+                        <div class="row nopadding justify-content-between">
+                            <div class="col-md-4 col-sm-6 padding-top-bottom-12 text-center">
+                                <a class="ubuntu no-link-decoration" href="#when-where">
+                                    <div class="gradient-red-orange">
+                                        <div class="inside-gradient padding-12">
+                                            ABOUT
+                                        </div>
+                                    </div>
+                                </a>    
+                           </div>
+                           <div class="col-md-4 col-sm-6 padding-top-bottom-12 text-center">
+                                <a class="ubuntu no-link-decoration" href="#FAQ"> 
+                                        <div class="gradient-yellow-green">
+                                        <div class="inside-gradient padding-12">
+                                            FAQ
+                                        </div>
+                                    </div>
+                                </a>
+                           </div>
+                           <div class="col-md-4 col-sm-6 padding-top-bottom-12 text-center">
+                                <a class="ubuntu no-link-decoration" href="#Sponsors"> 
+                                    <div class="gradient-blue-purple">
+                                        <div class="inside-gradient padding-12">
+                                            SPONSOR US
+                                        </div>
+                                    </div>
+                                </a>
+                           </div>
+                    </div>
+
                     <div class="row fade">
-                        <div class="col-lg-6 centerblock nopadding my-md-4">
+                        <div class="col-lg-6 centerblock nopadding my-4">
                             <!-- WHEN WHERE-->
                             <div class="qwer-container h-100" id="when-where">
                                 <div class="bar">
@@ -79,15 +113,15 @@
                                 <div class="content">
                                     <div class="padding-sides-25">
                                         <div class="row">
-                                            <div class="col-lg-9 col-md-12 mx-auto">
+                                            <div class="col-md-12 mx-auto text-center">
                                                 <div class="ubuntu-mono bold">
                                                     <i>When:</i> January 25-26 2020 [Winter Quarter]
                                                     <br>
                                                     <i>Where:</i> Ackerman Grand Ballroom, UCLA
                                                 </div>
+                                                <br>
                                                 <div class="ubuntu-mono"> 
-                                                    <br>
-                                                    Applications will open late November — follow us on social media for updates!
+                                                        Applications will open late November — follow us on social media for updates!
                                                     <br>
                                                     <div class="text-center my-4">
                                                         <span class="social-icon mx-sm-2">
@@ -107,14 +141,6 @@
                                                         </span>
                                                     </div>
                                                 </div>
-
-                                                <!-- <form class="ubuntu-mono" action="#when-where"> 
-                                                    <input class="text-input border" id="enter-email" type="text" placeholder="example@mail.com" style="margin: 0px;">	
-                                                    <input class="button" type="submit" value="submit" onclick="onsubmit_func()">
-                                                </form>  
-                                                <div class="ubuntu-mono" id="submitted" style="visibility:hidden;">
-                                                    Email submitted!
-                                                </div> -->
                                             </div>
                                         </div>
                                     </div>    
@@ -123,7 +149,7 @@
                         </div>
 
                         <!-- ABOUT -->
-                        <div class="col-lg-6 nopadding my-md-4">
+                        <div class="col-lg-6 nopadding my-4">
                             <div class="qwer-container h-100" id="About"> 
                                 <div class="bar">
                                     <div class="padding-sides-25">
@@ -159,7 +185,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- FAQ -->
         <div class="row padding-top-bottom-25 white" id="FAQ">
             <div class="padding-sides-100">
