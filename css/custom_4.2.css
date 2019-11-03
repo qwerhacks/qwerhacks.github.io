@@ -231,20 +231,16 @@ nav a:hover {
     height: 100%;
     margin: 25px;
 }
-.sponsor-item img {
-    height: 100px;
-    width: auto;
-}
-.life {
+.life img{
     height: 75px; 
     width: auto;
 }
-.harmony {
-    height: 100px; 
+.harmony img{
+    height: 90px; 
     width: auto;
 }
-.spirit {
-    height: 125px;
+.spirit img{
+    height: 105px;
     width: auto; 
 }
 
@@ -436,9 +432,27 @@ nav a:hover {
     .navbar .nav > li  img {
         margin: auto;
     }
-
     .padding-sides-100 {
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    .sponsor-item {
+        display: block;
+        width: auto;
+        height: 100%;
+        margin: 25px;
+    }
+    .life img {
+        width: 25%;
+        height: auto;
+    }
+    .harmony img {
+        width: 50%;
+        height: auto;
+    }
+    .spirit img {
+        width: 100%;
+        height: auto;
     }
 }
