@@ -28,7 +28,7 @@
 
 /* styling for main content */
 .logo {
-    max-width:100%;
+    max-width:90%;
     height: auto;
 }
 
@@ -179,6 +179,11 @@ nav a:hover {
 }
 .button a:visited {
     color: #fff;
+}
+
+.button-apply {
+    border: 1px solid #000;
+    background-color:var(--light-blue);
 }
 
 
