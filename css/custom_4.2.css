@@ -200,7 +200,7 @@ nav a:hover {
 }
 .content {
     display: table;
-    width: 100%;
+    min-width: 100%;
     min-height: 100%;
     padding-top: 65px;
     padding-bottom: 25px;
@@ -213,8 +213,8 @@ nav a:hover {
 }
 .partner-item {
     display: inline-block;
-    height: 90px;
     width: auto;
+    height: 90px;
     margin: 25px;
 }
 .partner-item img {
@@ -303,6 +303,10 @@ nav a:hover {
 .padding-sides-100 {
     padding-left: 100px;
     padding-right: 100px;
+}
+.navbar-padding {
+    padding-left: 100px;
+    padding-right: 150px;
 }
 .padding-right-12 {
     padding-right: 12px;
@@ -420,9 +424,6 @@ nav a:hover {
         margin-left: 0;
         margin-right: 0;
     }
-    .navbar-nav {
-        margin:0px; /* Center your menu with current 100% width available */
-    }
     .navbar .nav > li {
         display: block;
     }
@@ -432,6 +433,18 @@ nav a:hover {
     .padding-sides-100 {
         padding-left: 25px;
         padding-right: 25px;
+    }
+    .navbar-padding {
+        padding-left: 25px;
+        padding-right: 75px;
+    }
+
+    .partner-item {
+        width: 75%
+    }
+    .parnter-item img {
+        width: 100%;
+        height: auto;
     }
 
     .sponsor-item {
