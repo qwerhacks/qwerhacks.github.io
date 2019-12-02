@@ -25,6 +25,10 @@
     --border-radius: 12px;
 }
 
+::selection {
+background: var(--light-yellow); /* WebKit/Blink Browsers */
+}
+
 
 /* styling for main content */
 .logo {
@@ -78,7 +82,7 @@ h3 {
 
 p { 
     min-width: 100%;
-    font-size: 16px; 
+    font-size: 14px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 200; 
@@ -370,6 +374,31 @@ nav a:hover {
 }
 .light-purple {
     background-color: var(--light-purple);
+}
+
+.underline-red {
+    border-bottom: 2px solid var(--red);
+    padding-bottom: 3px;
+}
+.underline-orange{
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 3px;
+}
+.underline-yellow {
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 3px;
+}
+.underline-green{
+    border-bottom: 2px solid var(--green);
+    padding-bottom: 3px;
+}
+.underline-blue {
+    border-bottom: 2px solid var(--blue);
+    padding-bottom: 3px;
+}
+.underline-purple {
+    border-bottom: 2px solid var(--purple);
+    padding-bottom: 3px;
 }
 
 .black {
