@@ -20,6 +20,7 @@
     --full-page-side-margins: 108px;
     --spacing-qwer-bar-height: 40px;
     --spacing-side-padding: 25px;
+    --underline-spacing: 1px;
 
     --circle-size: 12px; 
     --border-radius: 12px;
@@ -209,6 +210,9 @@ nav a:hover {
     padding-top: 65px;
     padding-bottom: 25px;
 }
+.scrollable-y {
+    overflow: scroll;
+}
 
 .center-inline-block-parent {
     display: flex;
@@ -378,27 +382,27 @@ nav a:hover {
 
 .underline-red {
     border-bottom: 2px solid var(--red);
-    padding-bottom: 3px;
+    padding-bottom: var(--underline-spacing);
 }
 .underline-orange{
     border-bottom: 2px solid var(--orange);
-    padding-bottom: 3px;
+    padding-bottom: var(--underline-spacing);
 }
 .underline-yellow {
     border-bottom: 2px solid var(--yellow);
-    padding-bottom: 3px;
+    padding-bottom: var(--underline-spacing);
 }
 .underline-green{
     border-bottom: 2px solid var(--green);
-    padding-bottom: 3px;
+    padding-bottom: var(--underline-spacing);
 }
 .underline-blue {
     border-bottom: 2px solid var(--blue);
-    padding-bottom: 3px;
+    padding-bottom: var(--underline-spacing);
 }
 .underline-purple {
     border-bottom: 2px solid var(--purple);
-    padding-bottom: 3px;
+    padding-bottom: var(--underline-spacing);
 }
 
 .black {
