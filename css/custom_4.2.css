@@ -83,7 +83,7 @@ h3 {
 
 p { 
     min-width: 100%;
-    font-size: 14px; 
+    font-size: 16px; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 200; 
@@ -339,6 +339,13 @@ nav a:hover {
 .sticky-top {
     position: fixed;
     top: 0px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+.font-size-16 {
+    font-size: 16px;
 }
 
 /* colors! */
