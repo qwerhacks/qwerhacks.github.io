@@ -239,13 +239,14 @@ nav a:hover {
     height: 75px; 
     width: auto;
 }
-.harmony img{
+.harmony img {
     height: 90px; 
     width: auto;
 }
 .spirit img{
     height: 105px;
-    width: auto; 
+    max-height: auto;
+    max-width: 100%;
 }
 
 .qwer-row {
@@ -493,12 +494,14 @@ nav a:hover {
         margin: 25px;
     }
     .life img {
-        width: 25%;
-        height: auto;
+        max-width: 100%;
+        height: 60px;
+        max-height: auto;
     }
     .harmony img {
-        width: 50%;
-        height: auto;
+        max-width: 100%;
+        height: 75px;
+        max-height: auto;
     }
     .spirit img {
         width: 100%;
