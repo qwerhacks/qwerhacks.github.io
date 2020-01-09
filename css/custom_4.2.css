@@ -204,6 +204,18 @@ nav a:hover {
     transition: background .25s ease;
 }
 
+#button-volunteer {
+    border: 1px solid #000;
+    background-color: #fff; 
+    box-shadow: 1px 2px var(--blue);
+}
+#button-volunteer:hover {
+    border: 1px solid #000;
+    background-color:var(--light-blue); 
+    box-shadow: 1px 2px var(--blue);
+    transition: background .25s ease;
+}
+
 
 .dot {
     height: var(--circle-size);
