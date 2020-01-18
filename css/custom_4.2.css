@@ -33,7 +33,7 @@ background: var(--light-yellow); /* WebKit/Blink Browsers */
 
 /* styling for main content */
 .logo {
-    max-width:90%;
+    max-width:60%;
     height: auto;
 }
 
@@ -157,7 +157,9 @@ nav a:hover {
     color: #fff;
 }
 
-
+.is-collapsed {
+    
+}
 /* qwerhacks containers */
 .qwer-container {
     position: relative;
@@ -221,6 +223,11 @@ nav a:hover {
     height: var(--circle-size);
     width: var(--circle-size);
     border-radius: 50%;
+    display: inline-block;
+    margin-top: 14px;
+    margin-right: 4px
+}
+.plus {
     display: inline-block;
     margin-top: 14px;
     margin-right: 4px
@@ -436,6 +443,10 @@ nav a:hover {
 }
 .underline-purple {
     border-bottom: 2px solid var(--purple);
+    padding-bottom: var(--underline-spacing);
+}
+.underline-black {
+    border-bottom: 2px solid #000;
     padding-bottom: var(--underline-spacing);
 }
 
