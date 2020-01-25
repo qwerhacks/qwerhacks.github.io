@@ -425,6 +425,9 @@ nav a:hover {
 .light-purple {
     background-color: var(--light-purple);
 }
+.gray {
+    background-color: #eee;
+}
 
 .underline-red {
     border-bottom: 2px solid var(--red);
