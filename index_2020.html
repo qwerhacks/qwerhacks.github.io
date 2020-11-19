@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>QWER Hacks</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/custom_4.2.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="js/fade.js"></script>
+        <script src="js/custom-scripts.js"></script>
+
+    </head>
+
+    <body>
+        <!-- MLH badge -->
+        <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2020/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2020-season&utm_content=red" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2020/mlh-trust-badge-2020-red.svg" alt="Major League Hacking 2020 Hackathon Season" style="width:100%"></a>
+        
+        <!-- NAVBAR -->
+        <div class="black sticky-top navbar-padding nav-container">
+            <nav class="navbar navbar-expand-md ubuntu" >
+                <a class="navbar-brand" href="#"> 
+                    <img src="resources/logo-icon.png">
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <img src="resources/fa-bars.png" height="30px" width="auto">
+                    </span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-0 ml-auto">
+                        <!-- <li class="nav-item active mx-md-3">
+                            <a class="nav-link" href="#when-where">ABOUT</a>
+                        </li>
+                        <li class="nav-item mx-md-3">
+                            <a class="nav-link" href="#FAQ">FAQ <span class="sr-only">(current)</span> </a>
+                        </li> -->
+                        <li class="nav-item mx-md-3">
+                            <a class="nav-link" href="#Partners">POST-EVENT RESOURCES</a>
+                        </li>
+                        <li class="nav-item mx-md-3">
+                            <a class="nav-link" href="#SCHEDULE">SCHEDULE</a>
+                        </li> 
+                        <li class="nav-item mx-md-3">
+                            <a class="nav-link" href="#Partners">PARTNERS</a>
+                        </li>
+                        <li class="nav-item mx-md-3">
+                            <a class="nav-link" href="#Sponsors">SPONSORS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- row 1: when/where, announcements -->
+        <div class="white">
+            <div class="padding-sides-100 padding-top-bottom-25">
+                <div class="white" width=100%>
+                    <!-- LOGO -->
+                    <div class="row padding-top-bottom-25">
+                        <div class="col-md-12 col-lg-9 mx-auto nopadding">
+                            <div class="container padding-25 text-center">
+                                <img class="logo" src="resources/qwerhacks_logo.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- quick links (buttons) -->
+                    <div class="white ">
+                        <div class="row nopadding justify-content-between my-auto">
+                            <div class="col-md-6 col-sm-6 padding-top-bottom-12">
+                                <a class="ubuntu no-link-decoration" href="#day-of">
+                                    <div class="gradient-red-orange">
+                                        <div class="inside-gradient padding-12 text-center">
+                                            POST-EVENT RESOURCES
+                                        </div>
+                                    </div>
+                                </a>    
+                           </div>
+                           <!-- <div class="col-md-4 col-sm-6 padding-top-bottom-12 text-center">
+                                <a class="ubuntu no-link-decoration" href="#FAQ"> 
+                                    <div class="gradient-yellow-green">
+                                        <div class="inside-gradient padding-12">
+                                            FAQ
+                                        </div>
+                                    </div>
+                                </a>
+                           </div> -->
+                           <div class="col-md-6 col-sm-6 padding-top-bottom-12 text-center">
+                                <a class="ubuntu no-link-decoration" href="#SCHEDULE"> 
+                                    <div class="gradient-blue-purple">
+                                        <div class="inside-gradient padding-12">
+                                            SCHEDULE
+                                        </div>
+                                    </div>
+                                </a>
+                           </div>
+                        </div>
+                    </div>
+
+                    
+                    <!-- when-where, announcements 
+                    <div class="row fade" id="when-where-row">
+                        <div class="col-lg-6 centerblock nopadding my-4">
+                            <div class="qwer-container h-100" id="when-where">
+                                <div class="bar">
+                                    <div class="padding-sides-25">
+                                        <div class="dot red"></div>
+                                        <div class="dot orange"></div>
+                                        <div class="dot yellow"></div>
+                                        <div class="bar-title ubuntu"> WHEN AND WHERE </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="padding-sides-25">
+                                        <div class="row" id="when-where-content">
+                                            <div class="col-md-12 mx-auto text-center">
+                                                <div class="ubuntu-mono bold">
+                                                    <i>When:</i> January 25-26 2020 [Winter Quarter]
+                                                    <br>
+                                                    <i>Where:</i> Ackerman Grand Ballroom, UCLA
+                                                </div>
+                                                <div class="ubuntu-mono"> 
+                                                    <br>
+                                                    Thanks to everyone who participated in our hackathon - this was MLH's first LGBTQIA hackathon and you all made it possible.
+                                                    
+                                                    <br>
+                                                    
+                                                    <br>
+                                                    As always, follow us on social media to stay updated!
+                                                    <br>
+                                                    <div class="text-center my-4">
+                                                        <span class="social-icon mx-sm-2">
+                                                            <a href="https://www.facebook.com/qwerhacks/" target="_blank">
+                                                                <img src="resources/facebook-logo.png" width="30px" height="auto">
+                                                            </a>
+                                                        </span>
+                                                        <span class="social-icon mx-sm-2">
+                                                            <a href="https://www.instagram.com/qwerhacks/" target="_blank">
+                                                                <img src="resources/instagram-logo.png" width="30px" height="auto">
+                                                            </a>
+                                                        </span>
+                                                        <span class="social-icon mx-sm-2">
+                                                            <a href="https://www.linkedin.com/company/qwerhacks/" target="_blank">
+                                                                <img src="resources/linkedin-logo.png" width="30px" height="auto">
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6 nopadding my-4">
+                            <div class="qwer-container h-100" id="Announcements"> 
+                                <div class="bar">
+                                    <div class="padding-sides-25">
+                                        <div class="dot green"></div>
+                                        <div class="dot blue"></div>
+                                        <div class="dot purple"></div>
+                                        <div class="bar-title ubuntu"> ANNOUNCEMENTS </div>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="padding-sides-25">
+                                        <div style="overflow: -moz-scrollbars-vertical; overflow-y: scroll;" id="announcements-content">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p class="ubuntu-mono bold font-size-14"> 
+                                                        <span class="underline-orange"> Jan 27, 2020: </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="ubuntu-mono">
+                                                        <span class="bold underline-orange"> ONE. WEEK. LEFT.</span> For those of you who have applied
+                                                        and have been accepted, make sure to RSVP. If not, have
+                                                        no fear! Apps are still open, and it's not too late to
+                                                        apply!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p class="ubuntu-mono bold font-size-14"> 
+                                                        <span class="underline-orange"> Jan 17, 2020: </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="ubuntu-mono">
+                                                        <span class="bold underline-orange"> ONE. WEEK. LEFT.</span> For those of you who have applied
+                                                        and have been accepted, make sure to RSVP. If not, have
+                                                        no fear! Apps are still open, and it's not too late to
+                                                        apply!
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p class="ubuntu-mono bold font-size-14"> 
+                                                        <span class="underline-red"> Jan 03, 2020: </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="ubuntu-mono">
+                                                        Applications have reopened and 
+                                                        <i>will stay open</i> 
+                                                        until the event! We'll be releasing decisions 
+                                                        on a rolling basis :D
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p class="ubuntu-mono bold font-size-14"> 
+                                                        <span class="underline-purple"> Jan 01, 2020: </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="ubuntu-mono">
+                                                        Happy New Year! 🎉🎉🎉 Application decisions have been released! Make sure to RSVP by 
+                                                        <span class="underline-purple"> Jan 10, 2020</span>. Don't worry if you didn't get to apply 
+                                                        in time - we will open waitlist applications soon. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p class="ubuntu-mono bold font-size-14"> 
+                                                        <span class="underline-blue"> Dec 25, 2019: </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="ubuntu-mono">
+                                                        Happy holidays! Volunteer application deadlines are also extended to 
+                                                        <span class="underline-blue">Dec 27th</span>. 
+                                                        Apply to volunteer or mentor  
+                                                        <a href="https://tinyurl.com/qwervolunteer" target="_blank">here</a>.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p class="ubuntu-mono bold font-size-14"> 
+                                                        <span class="underline-green"> Dec 20, 2019: </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="ubuntu-mono">
+                                                        GREAT NEWS! The application deadline has been EXTENDED! Follow 
+                                                        <a href=https://tinyurl.com/tgvt5jl target="_blank"> this link </a>
+                                                        to apply. Apps now close on 
+                                                        <span class="underline-green">December 27th, 2019</span> 
+                                                        - make sure to take advantage of the 
+                                                        extension and APPLY!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p class="ubuntu-mono bold font-size-14"> 
+                                                        <span class="underline-yellow"> Nov 26, 2019: </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p class="ubuntu-mono">
+                                                        Application decisions will be released on 
+                                                        <span class="underline-yellow">January 1st, 2020.</span> 
+                                                        We hope this gives everyone enough time to plan for 
+                                                        the event and get hyped for the new year!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p class="ubuntu-mono bold font-size-14"> 
+                                                        <span class="underline-orange"> Nov 23, 2019: </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <p class="ubuntu-mono">
+                                                        Interested in volunteering or mentoring at QWER Hacks? Fill
+                                                        out our <a href=https://tinyurl.com/qwervolunteer target="_blank">volunteer form!</a>
+                                                        This one's due by 
+                                                        <span class="underline-orange">Dec 25th, 2019</span>. 
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <p class="ubuntu-mono bold font-size-14"> 
+                                                        <span class="underline-red"> Nov 12, 2019: </span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <p class="ubuntu-mono">
+                                                        Applications have been released! Follow 
+                                                        <a href=https://tinyurl.com/tgvt5jl target="_blank"> this link </a>
+                                                        to apply. Apps close on 
+                                                        <span class="underline-red">December 20th, 2019</span>, 
+                                                        so make sure to fill out the form by then!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+                -->
+            
+            </div>
+        </div>
+
+        <!-- day of -->
+        <div class="row padding-top-bottom-25 white" id="day-of">
+            <div class="row">
+                <div class="padding-sides-100">
+                    <div class="fade">
+                        <div class="qwer-container padding-25">
+                            <div class="bar">
+                                <div class="padding-sides-25">
+                                    <div class="dot red"></div>
+                                    <div class="dot orange"></div>
+                                    <div class="dot yellow"></div>
+                                    <div class="bar-title ubuntu"> SLIDES / POST-EVENT RESOURCES </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="padding-sides-25">
+                                    <div class="qwer-row">
+                                       <div class="ubuntu-mono"> 
+                                           <div class="col">
+                                                <!-- <h1><div class="text-center bold">Getting to UCLA</div></h1>
+                                                Looking for a carpool or rideshare? RSVP to join our slack page! 
+                                                Feel free to email us at <span><a href="mailto: qwerhacks@gmail.com">qwerhacks@gmail.com</a></span> if you haven't found 
+                                                anyone to share a ride with yet.
+                                                <div class="row my-4">
+                                                    <div class="col-sm-4 col-md-6" style="text-align:center">
+                                                        <img src="resources/compass.png" height="90px">
+                                                        <br>
+                                                        <br>
+                                                        Address of UCLA Ackerman Grand Ballroom:
+                                                        <br>
+                                                        <a href="https://www.google.com/maps/place/308+Westwood+Plaza,+Los+Angeles,+CA+90024/@34.0703606,-118.445393,18.03z/data=!4m5!3m4!1s0x80c2bc8894233d21:0xa03626df837b490a!8m2!3d34.070418!4d-118.4441451"> 308 Westwood Plaza, Los Angeles, CA 90024</a>
+                                                        <br>
+                                                        or a <a href="https://map.ucla.edu/?k=false&id=83759"> link to interactive map </a>
+                                                    </div>
+                                                    <div class="col-sm-4 col-md-6" style="text-align:center">
+                                                        <img src="resources/train.jpeg" height="90px">
+                                                        <br>
+                                                        <br>
+                                                        Recommended public transit to UCLA: 
+                                                        <a href="https://docs.google.com/spreadsheets/d/1H61PkLSCYMgillG1g2lOhpwXHj46jil-d4EXNNp0Ow4/edit?usp=sharing"> 
+                                                            <br>
+                                                            Link to our public transit spreadsheet</a>
+                                                    </div>
+                                                    <div class="col-sm-4 col-md-12" style="text-align:center">
+                                                        <img src="resources/car.png" height="90px">
+                                                        <br>
+                                                        <br>
+                                                        If you are ridesharing to UCLA, set the destination to: 
+                                                        <span class = "bold" style="color:#007BFF">UCLA Henry Samueli School of Engineering & Applied Sciences, </span>
+                                                        and Ackerman Grand Ballroom is about a 5 min walk from the turnaround
+                                                    </div>
+                                                </div> -->
+                                            </div>
+                                            <!-- <div class="row light-yellow my-4" style="border-radius: 15px;">
+                                                <div class="col">
+                                                    <h1 class="text-center bold">Join our Slack!</h1>
+                                                    <p class="text-center"> 
+                                                        <a href="https://qwerhacks2020.slack.com/">https://qwerhacks2020.slack.com/</a>
+                                                    </p>
+                                                    <p class="text-center padding-sides-100"> 
+                                                        Form teams, discuss ideas, or organize carpools before the event! 
+                                                        <i>This will be our main form of communication during the hackathon</i> 
+                                                    </p>
+                                                </div> 
+                                            </div> -->
+
+                                            <!-- <div class="row">
+                                                <div class="col">
+                                                    <h1 class="text-center bold">Resources for Beginners</h1>
+                                                    New to hacking? No worries! We've got you covered on all the need to knows for 
+                                                    your very first hackathon!
+                                                    <br>
+                                                    <ul>
+                                                        <li>
+                                                            A <a href="https://hack.mlh.io/learn/"> Hackathon Starter Kits & Guides</a>, provided by MLH!
+                                                        </li>
+                                                        <li>
+                                                            <a href="https://news.mlh.io/your-first-hackathon-10-07-2013"> Getting the most out of your first hackathon</a>
+                                                        </li>
+                                                        <li>
+                                                            Using Github: <a href="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners"> An Intro to Git and GitHub for Beginners (Tutorial)</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div> -->
+
+                                            <!-- <div class="row light-yellow my-4" style="border-radius: 15px;">
+                                                <div class="col">
+                                                    <h1 class="text-center bold"> Devpost </h1>
+                                                    <p class="text-center padding-sides-100"> 
+                                                        We'll be using Devpost for project submissions - visit 
+                                                        <a href="https://qwerhacks2020.devpost.com/">https://qwerhacks2020.devpost.com/</a> 
+                                                        and make a devpost account if you haven't already
+                                                    </p>
+                                                </div>
+                                            </div> -->
+
+                                            <h1 class="text-center bold"> Keynote Slides</h1>
+                                            <div class="row my-4" style="border-radius: 15px;">
+                                                <div class="col-sm-6 my-2">
+                                                    <p class="text-center"> 
+                                                        <a href="https://docs.google.com/presentation/d/1WWSlA8gjeX39D6JgmMEYzcpHiww8UFVDs4OMG6fCEYs/edit?usp=sharing">
+                                                            <img src="resources/luca-opening.png" width="100%" height="auto" target="_blank">
+                                                            <br>
+                                                            <p class="text-center">Luca's Opening Slides</p>
+                                                        </a>
+                                                    </p>
+                                                </div>
+
+                                                <div class="col-sm-6 my-2">
+                                                    <p class="text-center"> 
+                                                        <a href="https://drive.google.com/file/d/0B59wH-Dl0YytLV9zUy12RDlxeENhVkI0Z1JSQ2ItYWJ6aTJR/view?usp=sharing">
+                                                            <img src="resources/carey-opening.png" width="100%" height="auto" target="_blank">
+                                                            <br>
+                                                            <p class="text-center">Carey's Opening Slides</p>
+                                                        </a>
+                                                    </p>
+                                                </div>
+
+                                                <div class="row nopadding my-2">
+                                                    <div class="col-sm-6 mx-auto">
+                                                        <p class="text-center"> 
+                                                            <a href="https://drive.google.com/file/d/0B59wH-Dl0YytQzZTeHhMRGpFQXNXUkdMenBaMkh3YUVxTDVZ/view?usp=sharing">
+                                                                <img src="resources/wilson-closing.png" width="100%" height="auto" target="_blank">
+                                                                <br>
+                                                                <p class="text-center">Wilson's Closing Slides</p>
+                                                            </a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="row my-2">
+                                                <div class="col text-center" >
+                                                    <h1 "> Winning Projects: </h1>
+                                                    <p class="padding-sides-100"> 
+                                                        Projects are posted on 
+                                                        <a href="https://qwerhacks2020.devpost.com/submissions">Devpost</a>!
+                                                        Projects will be linked on this site soon! 
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="row my-2">
+                                                <div class="col text-center" >
+                                                    <h1 "> Pictures: </h1>
+                                                    <p class="padding-sides-100"> 
+                                                        A google photos link is up on the slack channel! Email us if you need access to our 
+                                                        <a href="qwerhacks2020.slack.com" target="_blank"> slack channel </a>
+                                                        <a href="https://qwerhacks2020.devpost.com/submissions" target="_blank">Devpost</a>!
+                                                        Send us your pictures at
+                                                        <a href="mailto:qwerhacks@gmail.com">qwerhacks@gmail.com</a> 
+                                                        and we can add it to the album!
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+
+                                            <div class="row my-2">
+                                                <div class="col text-center" >
+                                                    <h1 "> Other Resources: </h1>
+                                                    <p class="padding-sides-100"> 
+                                                        Follow 
+                                                        <hr>
+                                                        Matthew Wang's Intro to Frontend Development Workshop Readme: 
+                                                        <a href="https://github.com/malsf21/qwerhacks-web-dev-workshop" target="_blank">
+                                                            https://github.com/malsf21/qwerhacks-web-dev-workshop
+                                                        </a>
+                                                        <div class="github-card" data-github="malsf21/qwerhacks-web-dev-workshop" data-width="400" data-height="225" data-theme="default"></div>
+                                                        <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
+                                                        <br>
+                                                        Thanks for all your help, Matt. We love you!
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ABOUT -->
+        <div class="row padding-top-bottom-25 white" id="ABOUT">
+            <div class="padding-sides-100">
+                <div class="qwer-container fade" style="min-width:calc(100% - 40px);">
+                    <div class="bar">
+                        <div class="padding-sides-25">
+                            <div class="dot red"></div>
+                            <div class="dot orange"></div>
+                            <div class="dot yellow"></div>
+                            <div class="bar-title ubuntu"> ABOUT </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="padding-sides-25">
+                            <div class="qwer-row">
+                                <div class = "row padding-sides-25">
+                                    <p class="ubuntu-mono">
+                                        QWER Hacks is Major League Hacking's first LGBTQIA hackathon, held at UCLA! 
+                                        For 24 hours, around 150 amazing student 
+                                        hackers will work together to create fantastic 
+                                        and innovative products meant to help 
+                                        underrepresented groups.
+                                        <br> <br>
+                                        Through empowering talks from queer individuals 
+                                        in tech, technical and diversity & inclusion 
+                                        workshops, and the development of new products, 
+                                        QWER Hacks aims to increase the visibility of and 
+                                        celebrate the queer community in STEM, as well as 
+                                        engage and bring together queer individuals and allies.   
+                                    </p>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="row padding-top-bottom-25 white" id="FAQ">
+            <div class="padding-sides-100">
+                <div class="qwer-container fade">
+                    <div class="bar">
+                        <div class="padding-sides-25">
+                            <div class="dot red"></div>
+                            <div class="dot orange"></div>
+                            <div class="dot yellow"></div>
+                            <div class="bar-title ubuntu"> FAQ </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="padding-sides-25">
+                            <div class="qwer-row">
+                                <div class="qwer-row">
+                                    <div class="row">
+                                        <div class="col-md-6 padding-sides-25">
+                                            <p class="ubuntu-mono bold">
+                                                <span class="light-red">WHO CAN COME?</span>
+                                            </p>
+                                            <p class="ubuntu-mono">
+                                                Anyone who is ...
+                                                <br>
+                                                a) above 18
+                                                <br>
+                                                b) a member 
+                                                <span style="font-style: italic;"> (or ally!) </span> 
+                                                of the LGBTQIA community
+                                                <br>
+                                                c) enrolled in a postsecondary academic institution 
+                                                <br> 
+                                                ... is invited to participate!
+
+                                            </p> 
+                                        </div>
+                                        <div class="col-md-6 padding-sides-25">
+                                            <p class="ubuntu-mono bold">
+                                                <span class="light-red">HOW DO TEAMS WORK?</span>
+                                            </p>
+                                            <p class="ubuntu-mono">
+                                                You can sign up as a team of up to four members. 
+                                                But make sure that all of your team members submit 
+                                                an application! If you don’t have a team before the 
+                                                event, don’t fret! We will help you find fellow 
+                                                hackers to work with once you arrive.
+                                            </p> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 padding-sides-25">
+                                            <p class="ubuntu-mono bold">
+                                                <span class="light-orange">WHAT SHOULD I BRING?</span>
+                                            </p>
+                                            <p class="ubuntu-mono">
+                                                Your student ID, a laptop, and a charger are the only 
+                                                necessities. We recommend you bring clothes, toiletries, 
+                                                and a sleeping bag as well!
+                                            </p> 
+                                        </div>
+                                        <div class="col-md-6 padding-sides-25">
+                                            <p class="ubuntu-mono bold">
+                                                <span class="light-orange">WHAT CAN I CREATE?</span>
+                                            </p>
+                                            <p class="ubuntu-mono">
+                                                Absolutely anything you want –– websites, apps, UI,
+                                                you name it! We encourage you to create 
+                                                a product that positively impacts the LGBTQIA 
+                                                community or other underrepresented groups in tech.
+                                            </p> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 padding-sides-25">
+                                            <p class="ubuntu-mono bold">
+                                                <span class="light-green">HOW MUCH WILL IT COST?</span>
+                                            </p>
+                                            <p class="ubuntu-mono">
+                                                It’s absolutely free! We’ll be providing you 
+                                                with meals, a place to hack, and company and 
+                                                rainbow-themed swag.
+                                            </p>   
+                                        </div>
+                                        <div class="col-md-6 padding-sides-25">
+                                            <p class="ubuntu-mono bold">
+                                                <span class="light-green">WILL TRAVEL COSTS BE REIMBURSED?</span>
+                                            </p>
+                                            <p class="ubuntu-mono">
+                                                Unfortunately, we are not able to offer travel
+                                                reimbursements this year. However, we plan on making this happen
+                                                in the future! 
+                                            </p> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 padding-sides-25">
+                                            <p class="ubuntu-mono bold">
+                                                <span class="light-blue">CAN ALLIES ATTEND?</span>
+                                            </p>
+                                            <p class="ubuntu-mono">
+                                                Yes! We welcome anyone who supports our mission of increasing the visibility of our community in tech :)
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6 padding-sides-25">
+                                            <p class="ubuntu-mono bold">
+                                                <span class="light-blue">ANYTHING ELSE I SHOULD KNOW?</span>
+                                            </p>
+                                            <p class="ubuntu-mono">
+                                                There are a few things we do not encourage; please 
+                                                refer to the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH code of conduct</a>.
+                                            </p> 
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 padding-sides-25">
+                                            <p class="ubuntu-mono bold">
+                                                <span class="light-purple">SOUNDS GREAT, HOW DO I APPLY?</span>
+                                            </p>
+                                            <p class="ubuntu-mono">
+                                                We're accepting applications on a rolling basis until the event! Follow us on <span><a href="https://www.instagram.com/qwerhacks/" target="_blank">Instagram</a> </span>
+                                                and keep an eye out for upcoming announcements!
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6 padding-sides-25">
+                                            <p class="ubuntu-mono bold">
+                                                <span class="light-purple">I STILL NEED HELP!</span>
+                                            </p>
+                                            <p class="ubuntu-mono">
+                                                Shoot us an email at <span><a href="mailto: qwerhacks@gmail.com">qwerhacks@gmail.com</a></span>
+                                                and we’ll get back to you before you can 
+                                                say “QWER Hacks is awe-!”
+                                            </p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TENTATIVE HACKATHON SCHEDULE -->
+        <div class="row padding-top-bottom-25 white" id="SCHEDULE">
+            <div class="padding-sides-100">
+                <div class="qwer-container fade" style="min-width:calc(100% - 40px);">
+                    <div class="bar">
+                        <div class="padding-sides-25">
+                            <div class="dot green"></div>
+                            <div class="dot blue"></div>
+                            <div class="dot purple"></div>
+                            <div class="bar-title ubuntu"> TENTATIVE HACKATHON SCHEDULE </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="padding-sides-25">
+                            <div class="qwer-row">
+                                <div class = "row padding-sides-25">
+                                    <div class="row nopadding">
+                                        <p class="ubuntu-mono">
+                                            Below is the tentative schedule for the hackathon. 
+                                            Please note that events marked with an asterisk (*) are subject to change. 
+                                        </p>
+                                        
+                                        <table width="100%" class="ubuntu-mono">
+                                            <col width="60%">
+                                            <col width="20%">
+                                            <col width="20%">
+                                            <tr>
+                                                <th class="events"><span class="light-red">EVENT</span></th>
+                                                <th class="events"><span class="light-orange">START TIME</span></th>
+                                                <th class="events"><span class="light-yellow">END TIME</span></th>
+                                            </tr>
+                                            <tr>
+                                                <td>Check-in</td>
+                                                <td>Jan 25 11:00 AM</td>
+                                                <td>Jan 25 1:00 PM</td>
+                                            </tr>
+                                            <tr>
+                                                <td>* QWER Hacks opening presentation</td>
+                                                <td>Jan 25 1:00 PM</td>
+                                                <td>Jan 25 1:30 PM</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    * Introductory keynote speeches
+                                                    <ul>
+                                                        <li>
+                                                            <b><span class="light-green">Luca Soldaini, Ph.D.</span></b>
+                                                            <br>
+                                                            <i>
+                                                                Applied Scientist @ Amazon Alexa
+                                                            </i>
+                                                        </li>
+                                                        <li>
+                                                            <b><span class="light-blue">Professor Carey Nachenberg</span></b>
+                                                            <br>
+                                                            <i>
+                                                                Principal Software Engineer @ Google, formerly Chief Scientist @ Chronicle, Co-Inventor of Norton AntiVirus
+                                                            </i>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td>Jan 25 1:30 PM</td>
+                                                <td>Jan 25 3:00 PM</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hacking begins</td>
+                                                <td>Jan 25 3:00 PM</td>
+                                                <td>--</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mentoring begins</td>
+                                                <td>Jan 25 3:00 PM</td>
+                                                <td>--</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div class="ubuntu-mono"> Workshops: </div>
+                                    <table width="100%" class="ubuntu-mono">
+                                        <col width="10%">
+                                        <col width="50%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <tr>
+                                            <td></td>
+                                            <td> First Hackathon Tips and Team Formation</td>
+                                            <td> Jan 25th 3:00PM</td>
+                                            <td> Jan 25th 3:45PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Google Cloud Tech Talk Breakout Session</td>
+                                            <td> Jan 25th 4:00PM </td>
+                                            <td> Jan 25th 4:50PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Intro to Front-End Web Development: React & Firebase</td>
+                                            <td> Jan 25th 5:00PM </td>
+                                            <td> Jan 25th 6:30PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Dealing with Imposter Syndrome</td>
+                                            <td> Jan 25th 5:30PM</td>
+                                            <td> Jan 25th 6:15PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Introduction to Deep Learning</td>
+                                            <td> Jan 25th 7:00PM</td>
+                                            <td> Jan 25th 7:50PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Hacking for Social Impact, EdTech Edition</td>
+                                            <td> Jan 25th 7:30PM</td>
+                                            <td> Jan 25th 7:55PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>How Diversity Improves Products</td>
+                                            <td> Jan 25th 8:00PM</td>
+                                            <td> Jan 25th 8:50PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>Intro to Game Development</td>
+                                            <td> Jan 25th 9:00PM</td>
+                                            <td> Jan 25th 9:45PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                LGBTQIA Sexual Health
+                                                <br> 
+                                                <i style="color: #666">Please attend this workshop to be considered for the "Best Health Hack!"</i>
+                                            </td>
+                                            <td> Jan 26th 10:00AM</td>
+                                            <td> Jan 26th 10:50AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>A Retrospective on Queer People in Tech</td>
+                                            <td> Jan 26th 11:00AM</td>
+                                            <td> Jan 26th 11:45AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>How to be a good ally (in STEM)</td>
+                                            <td> Jan 26th 12:00PM</td>
+                                            <td> Jan 26th 12:30PM</td>
+                                        </tr>
+                                    </table>
+
+                                    <table width="100%" class="ubuntu-mono">
+                                        <col width="60%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <tr>
+                                            <td>Dinner</td>
+                                            <td>Jan 25 6:00 PM</td>
+                                            <td>Jan 25 8:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Breakfast</td>
+                                            <td>Jan 26 8:00 AM</td>
+                                            <td>Jan 26 10:00 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lunch</td>
+                                            <td>Jan 26 12:00 PM</td>
+                                            <td>Jan 26 2:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Devpost submissions due</td>
+                                            <td>Jan 26 2:00 PM</td>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hacking ends</td>
+                                            <td>Jan 26 3:00 PM</td>
+                                            <td>--</td>
+                                        </tr>
+                                        <tr>
+                                            <td>* Judging and exposition</td>
+                                            <td>Jan 26 3:30 PM</td>
+                                            <td>Jan 26 5:00 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                * Closing keynote speech + Q&A
+                                                <ul>
+                                                    <li>
+                                                        <b><span class="light-purple">Wilson Y. Lee</span></b>
+                                                        <br>
+                                                        <i>
+                                                            Machine Learning Engineer @ The Trevor Project, UCLA alum
+                                                        </i>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>Jan 26 5:00 PM</td>
+                                            <td>Jan 26 5:45 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>* Awards ceremony</td>
+                                            <td>Jan 26 5:45 PM</td>
+                                            <td>Jan 26 6:30 PM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Closing remarks</td>
+                                            <td>Jan 26 6:30 PM</td>
+                                            <td>Jan 26 6:45 PM</td>
+                                        </tr>
+                                    </table>   
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PARTNERS -->
+        <div class="padding-top-bottom-25 white" id="Partners">
+            <div class="padding-sides-100">
+                <div class="row">
+                    <div class="qwer-container fade" style="min-width:calc(100% - 40px);">
+                        <div class="bar">
+                            <div class="padding-sides-25">
+                                <div class="dot red"></div>
+                                <div class="dot orange"></div>
+                                <div class="dot yellow"></div>
+                                <div class="bar-title ubuntu"> PARTNERS </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="padding-sides-25">
+                                <div class="qwer-row">
+                                    <div class="row text-center center-inline-block-parent">
+                                        <div class="partner-item">
+                                            <a href="http://www.swe.ucla.edu/" target="_blank">
+                                                <img src="resources/swe-logo.png">
+                                            </a>
+                                        </div>
+                                        <div class="partner-item">
+                                            <a href="https://uclaacmai.github.io/" target="_blank">
+                                                <img src="resources/acmailogo.png">
+                                            </a>
+                                        </div>
+                                        <div class="partner-item">
+                                            <a href="https://www.facebook.com/groups/uclaacmw" target="_blank">
+                                                <img src="resources/acmwlogo.svg">
+                                            </a>
+                                        </div>
+                                        <div class="partner-item">
+                                            <a href="https://twitter.com/queersinstem" target="_blank">
+                                                <img src="resources/qstem-logo.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="partner-item">
+                                            <a href="http://www.ieeewatt.ucla.edu/" target="_blank">
+                                                <img src="resources/watt.png">
+                                            </a>
+                                        </div>
+                                        <div class="partner-item">
+                                            <a href="https://teachla.uclaacm.com/" target="_blank">
+                                                <img src="resources/logo-teachla.svg">
+                                            </a>
+                                        </div>
+                                        <div class="partner-item">
+                                            <a href="https://www.facebook.com/groups/uclaacmstudio" target="_blank">
+                                                <img src="resources/logo-studio.svg">
+                                            </a>
+                                        </div>
+                                        <div class="partner-item">
+                                            <a href="https://www.thetrevorproject.org/" target="_blank">
+                                                <img src="resources/trevor-project-logo.png">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SPONSORS -->
+        <div class="padding-top-bottom-25 white" id="Sponsors">
+            <div class="padding-sides-100">
+                <div class="row">
+                    <div class="qwer-container fade" style="min-width:calc(100% - 40px);">
+                        <div class="bar">
+                            <div class="padding-sides-25">
+                                <div class="dot green"></div>
+                                <div class="dot blue"></div>
+                                <div class="dot purple"></div>
+                                <div class="bar-title ubuntu"> SPONSORS </div>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="padding-sides-25">
+                                <div class="row text-center">
+                                    <p class="my-3 ubuntu-mono text-center"> 
+                                        Thanks to our sponsors for making this event possible!
+                                    </p>
+                                    <hr/>
+
+                                    <!-- SPIRIT TIER -->
+                                    <div class="container-fluid">
+                                        <p class="ubuntu-mono text-center"> Spirit tier sponsors: </p>
+                                        <div class="row center-inline-block-parent">
+                                            <div class="sponsor-item spirit">
+                                                <a href="http://heal.com/" target="_blank">
+                                                    <img src="resources/heal.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row center-inline-block-parent">
+                                            <div class="sponsor-item spirit">
+                                                <a href="https://aerospace.org/" target="_blank">
+                                                    <img src="resources/aerospace-corp-logo.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row mx-auto center-inline-block-parent">
+                                            <div class="sponsor-item spirit">
+                                                <a href="https://www.pimco.com/en-us/our-firm/careers/" target="_blank">
+                                                    <img src="resources/pimco-logo.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <hr/>
+                                    </div>
+
+                                    <!-- HARMONY TIER -->
+                                    <div class="container-fluid">
+                                        <p class="ubuntu-mono text-center"> Harmony tier sponsors: </p>
+                                        <div class="row mx-auto center-inline-block-parent">
+                                            <div class="sponsor-item harmony">
+                                                <a href="https://www.facebook.com/careers/" target="_blank">
+                                                    <img src="resources/facebook-sponsor-logo.png">
+                                                </a>
+                                            </div>
+                                            <div class="sponsor-item harmony">
+                                                <a href="https://www.oracle.com/index.html" target="_blank">
+                                                    <img src="resources/oracle-logo.png">
+                                                </a> 
+                                            </div>
+                                            <div class="sponsor-item harmony">
+                                                <a href="https://github.com/features" target="_blank">
+                                                    <img src="resources/github-logo.png">
+                                                </a>
+                                            </div>
+                                            <div class="sponsor-item harmony">
+                                                <a href="https://careers.activision.com/students" target="_blank">
+                                                    <img src="resources/activision-logo.jpg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <hr/>
+                                    </div>
+                                    
+                                    <!-- LIFE TIER -->
+                                    <div class="container-fluid">
+                                        <p class="ubuntu-mono text-center"> Life tier sponsors: </p>
+                                        <div class="row mx-auto center-inline-block-parent">
+                                            <div class="sponsor-item life">
+                                                <a href="https://www.microsoft.com/" target="_blank">
+                                                    <img src="resources/microsoft-logo.png">
+                                                </a>
+                                            </div>
+                                            <div class="sponsor-item life">
+                                                <a href="https://www.att.com/" target="_blank">
+                                                    <img src="resources/att-logo.png">
+                                                </a>
+                                            </div>
+                                            <div class="sponsor-item life">
+                                                <a href="https://www.qualcomm.com/" target="_blank">
+                                                    <img src="resources/qualcomm-logo.png">
+                                                </a>
+                                            </div>
+                                            <div class="sponsor-item life nopadding">
+                                                <a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank">
+                                                    <img src="resources/sticker-mule-logo-light.png">
+                                                </a>
+                                            </div>
+                                            <div class="sponsor-item life nopadding">
+                                                <a href="https://careers.google.com/students/" target="_blank">
+                                                    <img src="resources/Google Cloud horizontal lockup 4-color printing website and 4-color tee printing only 08.14.19.png">
+                                                </a>
+                                            </div>
+                                            <div class="sponsor-item life nopadding">
+                                                <a href="https://ultrapress.com/" target="_blank">
+                                                    <img src="resources/ultrapress-logo.png">
+                                                </a>
+                                            </div>
+                                            <div class="sponsor-item life nopadding mx-4">
+                                                <a href="https://www.lockheedmartin.com/" target="_blank">
+                                                    <img src="resources/lockheed-martin-logo.png">
+                                                </a>
+                                            </div>
+                                            <div class="sponsor-item life nopadding my-2">
+                                                <a href="https://www.northropgrumman.com/" target="_blank">
+                                                    <img src="resources/ng-logo.svg">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="padding-top-bottom-25 black">
+            <div class="padding-sides-100">
+                <div class="footer">
+                    <div class="row mx-2">
+                        <p class="ubuntu"> QWER Hacks </p>
+                    </div>
+                    <div class="row mx-2">
+                        <div class="col-lg-4 col-sm-6 nopadding">
+                            <p class="ubuntu-mono">
+                                <span class="bold">Team:</span> <br>
+                                Arjun Subramonian <br>
+                                Isabel Ketner <br>
+                                Natasha Puthukudy <br>
+                                Pragathi Venkatesh <br>
+                                Sharvani Jha <br>
+                                Spurthi Rallapalli <br>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 nopadding">
+                            <p class="ubuntu-mono">
+                                <span class="bold">Follow us:</span> <br>
+                                <a href="https://www.linkedin.com/company/qwerhacks/" target="_blank"> 
+                                    Linkedin
+                                </a> 
+                                <br>
+                                <a href="https://www.facebook.com/qwerhacks/" target="_blank">
+                                    Facebook
+                                </a>
+                                <br>
+                                <a href="https://www.instagram.com/qwerhacks/" target="_blank">
+                                    Instagram
+                                </a>
+                                <br>
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 nopadding">
+                            <p class="ubuntu-mono">
+                                <span class="bold">More Links:</span> <br>
+                                <a href="https://tinyurl.com/QWERHacks-Packet" target="_blank">
+                                    Sponsorship Packet
+                                </a> 
+                                <br>
+                                <a href="https://tinyurl.com/tgvt5jl" target="_blank">
+                                    Application Form 
+                                </a> 
+                                <br>
+                                <a href="http://mlh.io/code-of-conduct" target="_blank">
+                                    MLH Code of Conduct
+                                </a> 
+                                <br>
+                                <a href="https://tinyurl.com/qwervolunteer" target="_blank">
+                                    Volunteer Form
+                                </a> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
